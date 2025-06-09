@@ -81,3 +81,10 @@ Would you like detailed implementation guidelines for any specific component?
 
 
 
+### 1.05 PROJECT - II - use of controllers & routes professionally
+
+- Built simple GET APIs: `/`, `/greeting`, `/name`.
+- Used controllers for response logic.
+- Defined routes with Express Router.
+- Configured dotenv for environment variables.
+- Started server with Express on specified port.
