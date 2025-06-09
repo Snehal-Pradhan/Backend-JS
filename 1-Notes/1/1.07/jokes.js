@@ -1,0 +1,22 @@
+export const jokesArray = [
+  { "id": 1, "joke": "Why don’t scientists trust atoms? Because they make up everything!" },
+  { "id": 2, "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised." },
+  { "id": 3, "joke": "Why don’t skeletons fight each other? They don’t have the guts." },
+  { "id": 4, "joke": "I used to play piano by ear, but now I use my hands." },
+  { "id": 5, "joke": "Why did the scarecrow win an award? Because he was outstanding in his field!" },
+  { "id": 6, "joke": "I’m reading a book about anti-gravity. It’s impossible to put down." },
+  { "id": 7, "joke": "Did you hear about the claustrophobic astronaut? He needed a little space." },
+  { "id": 8, "joke": "What do you call fake spaghetti? An impasta." },
+  { "id": 9, "joke": "Why did the bicycle fall over? It was two-tired." },
+  { "id": 10, "joke": "I told my computer I needed a break, and now it won’t stop sending me vacation ads." },
+  { "id": 11, "joke": "Parallel lines have so much in common. It’s a shame they’ll never meet." },
+  { "id": 12, "joke": "Why don’t eggs tell jokes? They’d crack each other up." },
+  { "id": 13, "joke": "I only know 25 letters of the alphabet. I don’t know y." },
+  { "id": 14, "joke": "Why couldn’t the leopard play hide and seek? Because he was always spotted." },
+  { "id": 15, "joke": "I'm on a seafood diet. I see food and I eat it." },
+  { "id": 16, "joke": "Why do cows wear bells? Because their horns don’t work." },
+  { "id": 17, "joke": "I would tell you a construction joke, but I’m still working on it." },
+  { "id": 18, "joke": "Why did the math book look sad? Because it had too many problems." },
+  { "id": 19, "joke": "What do you call cheese that isn't yours? Nacho cheese!" },
+  { "id": 20, "joke": "Why did the coffee file a police report? It got mugged." }
+];
