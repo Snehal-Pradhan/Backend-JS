@@ -1,0 +1,13 @@
+{
+  "name": "1.08",
+  "version": "1.0.0",
+  "description": "booKdirectory API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type" : "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
