@@ -1,0 +1,42 @@
+[
+  {
+    "name": "The Hitchhiker's Guide to the Galaxy",
+    "id": 101
+  },
+  {
+    "name": "Pride and Prejudice",
+    "id": 102
+  },
+  {
+    "name": "1984",
+    "id": 103
+  },
+  {
+    "name": "To Kill a Mockingbird",
+    "id": 104
+  },
+  {
+    "name": "The Great Gatsby",
+    "id": 105
+  },
+  {
+    "name": "Dune",
+    "id": 106
+  },
+  {
+    "name": "The Lord of the Rings",
+    "id": 107
+  },
+  {
+    "name": "Harry Potter and the Sorcerer's Stone",
+    "id": 108
+  },
+  {
+    "name": "The Catcher in the Rye",
+    "id": 109
+  },
+  {
+    "name": "Frankenstein",
+    "id": 110
+  }
+]
