@@ -55,6 +55,25 @@ export const createBook = (req,res) =>{
     })
 }
 
+export const deleteBook = (req,res) =>{
+    const idToDelete = Number(req.params.id);
+    books = books.filter((b)=> b.id !== idToDelete)
+    SaveFile()
+    res.status(204).end()
+}
+
+export const updateBook = (req,res) =>{
+    const idToUpdate = Number(req.params.id);
+    const updates = req.body;
+    const bookToUpdate = books.find((b)=> b.id === idToUpdate);
+    const updatedBook = {
+        ...bookToUpdate,
+        ...updates
+    }
+    books[idToUpdate-1] = updatedBook;
+    SaveFile()
+    res.status(200).json({status:"Update succesful",...updatedBook});
+}
 
 const SaveFile = async() =>
     {
