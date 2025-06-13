@@ -96,3 +96,15 @@ Create a new product.
 
 ```
 
+## 🛒 Product Routes
+
+| Method | Endpoint                | Description                                      |
+|--------|-------------------------|--------------------------------------------------|
+| GET    | `/api/v1/products`      | Retrieve all products with filtering, sorting, pagination, and search |
+| GET    | `/api/v1/products/:id`  | Retrieve a single product by its MongoDB ID     |
+| POST   | `/api/v1/products`      | Create a new product                            |
+| PUT    | `/api/v1/products/:id`  | Update product details by ID                    |
+| DELETE | `/api/v1/products/:id`  | Delete a product by ID                          |
+
+---
+

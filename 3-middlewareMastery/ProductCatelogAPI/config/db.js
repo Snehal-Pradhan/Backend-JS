@@ -3,7 +3,7 @@ import mongoose from "mongoose"
 export const connectDB = async() => {
     try {
         await mongoose.connect(process.env.MONGO_URI,{
-        useNewUserParser : true,
+        useNewUrlParser : true,
         useUnifiedTopology  : true,
         });
 
@@ -12,6 +12,4 @@ export const connectDB = async() => {
         console.error(`❌ MongoDB connection error: ${error.message}`);
         process.exit(1);
     }
-
-    
-}
+};
