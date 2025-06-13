@@ -1,0 +1,13 @@
+{
+  "name": "productcatelogapi",
+  "version": "1.0.0",
+  "description": "A RESTful API for managing a product catalog built with **Node.js**, **Express**, and **Mongoose**. It enables users to browse and manage products with powerful **filtering**, **sorting**, **pagination**, and **text-based search**, simulating a real-world e-commerce experience.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
