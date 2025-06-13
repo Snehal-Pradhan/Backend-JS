@@ -7,10 +7,7 @@
 
 - Create, update, delete, and fetch tasks
 - Mark tasks as completed or pending
-- Set and manage due dates
-- Filter tasks by status
 - Production-ready structure (routes, controllers, DB config)
-- Easily extendable (pagination, auth, tags)
 
 ## 🛠️ Tech Stack
 
@@ -74,18 +71,4 @@ Base Route: `/api/tasks`
   createdAt: Date,      // auto via timestamps
 }
 ```
-
-## 🎯 Future Improvements
-
-- Pagination (`/tasks?page=1&limit=10`)
-- Authentication & user management
-- Priority tags & reminders
-- Due soon/today filters
-
-## 📄 License
-
-MIT
-
----
-
 **Made with ❤️ by Snehal Pradhan**
