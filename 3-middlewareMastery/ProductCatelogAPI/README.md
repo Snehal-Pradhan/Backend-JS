@@ -107,4 +107,3 @@ Create a new product.
 | DELETE | `/api/v1/products/:id`  | Delete a product by ID                          |
 
 ---
-
