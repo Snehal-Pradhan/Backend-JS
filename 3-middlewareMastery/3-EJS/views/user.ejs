@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        // Random user data generator
+        const randomUsers = [
+            { id: 1, username: "Alex Johnson", email: "alex.j@example.com", imageUrl: "https://randomuser.me/api/portraits/men/32.jpg" },
+            { id: 2, username: "Sarah Williams", email: "sarah.w@business.com", imageUrl: "https://randomuser.me/api/portraits/women/44.jpg" },
+            { id: 3, username: "Michael Chen", email: "michael.c@tech.org", imageUrl: "" },
+            { id: 4, username: "Emily Rodriguez", email: "emily.r@design.net", imageUrl: "https://randomuser.me/api/portraits/women/68.jpg" },
+            { id: 5, username: "David Kim", email: "david.k@services.io", imageUrl: "https://randomuser.me/api/portraits/men/75.jpg" },
+            { id: 6, username: "Jessica Brown", email: "jessica.b@marketing.co", imageUrl: "" },
+            { id: 7, username: "Daniel Smith", email: "daniel.s@finance.ai", imageUrl: "https://randomuser.me/api/portraits/men/22.jpg" }
+        ];
+    </script>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div class="bg-white shadow-sm py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">U
+                </div>
+                <span class="text-xl font-bold text-gray-800">UserHub</span>
+            </div>
+            <a href="/users/new"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition">
+                <i class="fas fa-plus"></i> Add User
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto p-6">
+        <!-- User Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+            <script>
+                randomUsers.forEach(user => {
+                    document.write(`
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+              <!-- User Image -->
+              <div class="h-40 bg-gray-200 flex items-center justify-center overflow-hidden">
+                ${user.imageUrl ?
+                            `<img src="${user.imageUrl}" alt="${user.username}" class="w-full h-full object-cover">` :
+                            `<div class="text-gray-400 text-5xl"><i class="fas fa-user-circle"></i></div>`}
+              </div>
+              
+              <!-- User Info -->
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-900 truncate">${user.username}</h3>
+                <p class="text-sm text-gray-500 mt-1 truncate">${user.email}</p>
+              </div>
+              
+              <!-- Action Buttons -->
+              <div class="px-4 pb-4 flex justify-between">
+                <a href="/users/edit/${user.id}" class="text-blue-600 hover:text-blue-800 transition" title="Edit">
+                  <i class="fas fa-pen"></i>
+                </a>
+                <button onclick="confirmDelete(${user.id})" class="text-red-500 hover:text-red-700 transition" title="Delete">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+            </div>
+          `);
+                });
+
+                function confirmDelete(userId) {
+                    if (confirm('Are you sure you want to delete this user?')) {
+                        // In a real app, this would submit a form or make an API call
+                        alert(`User ${userId} would be deleted in a real application`);
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
