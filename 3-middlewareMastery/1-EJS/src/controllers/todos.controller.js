@@ -1,6 +1,9 @@
-export const getAllTodos = (req,res)=>{
+import todosModel from "../models/todos.model.js"
+
+export const getAllTodos = async(req,res)=>{
     try {
-        res.status(200).json({status : "succesful"})
+        const data = await todosModel.find();
+        res.status(200).json(data)
     } catch (error) {
         res.status(500).json({error: "unable to fetch todos"})
     }
