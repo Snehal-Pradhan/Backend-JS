@@ -1,6 +1,3 @@
-Absolutely! Since you’re familiar with **Node.js + Express + MongoDB**, we’ll now focus on **Server-Side Rendering (SSR)** using **EJS** (Embedded JavaScript templates). SSR dynamically generates HTML on the server and sends it to the client, which is great for SEO, performance, and full-stack control.  
-
-Here’s a **step-by-step roadmap** with **10 projects** to take you from basic SSR to expert-level EJS usage, integrating query params, MongoDB, and dynamic rendering.  
 
 ---
 
