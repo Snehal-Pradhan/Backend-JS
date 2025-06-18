@@ -230,3 +230,9 @@ views/
 - Explore **Next.js** (React SSR framework).  
 
 Let me know if you want a deep dive into any of these! 🚀
+
+
+Here's a short intro for your GitHub repo `Zod` documentation page:
+
+---
+
