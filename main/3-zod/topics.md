@@ -1,6 +1,3 @@
-Great! Since you're already familiar with **Node.js + Express + MongoDB**, let’s now focus on **Zod**, a TypeScript-first schema validation library. Zod helps you validate and parse data with static type inference, making it perfect for API validation, form handling, and type safety.  
-
-Here’s a **step-by-step roadmap** with **10 projects** to take you from **basic Zod usage** to **expert-level validation**, integrating Express, MongoDB, and TypeScript.  
 
 ---
 
@@ -256,8 +253,3 @@ app.get("/posts/:id", async (req, res) => {
 
 ---
 
-### **Next Steps**  
-- Try **Zod with React Hook Form** for frontend validation.  
-- Explore **tRPC** for end-to-end type safety.  
-
-Let me know if you want a deep dive into any of these! 🚀
